@@ -58,13 +58,15 @@ addTodoItem = title =>{
     
     render(){
         return(
-            <div>
+            <div className="container">
+                <div className="inner">
                 <Header/>
                 <InputTodo addTodoprops = {this.addTodoItem}/>
       <TodoList 
       todos={this.state.todos} 
       handleChangeprops = {this.handleChange}
       deleteTodoprops = {this.delTodo}/>
+      </div>
     </div>
         )
     }
