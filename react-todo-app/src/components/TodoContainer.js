@@ -55,6 +55,17 @@ addTodoItem = title =>{
         todos:[...this.state.todos, newTodo]
     });
 };
+setUpdate = (updatedTitle, id) =>{
+    this.setState({
+        todos: this.state.todos.map(todo => {
+            if (todo.id === id){
+                todo.title = updatedTitle
+            }
+            return todo
+        })
+    })
+    console.log(updatedTitle, id)
+}
     
     render(){
         return(
@@ -65,7 +76,8 @@ addTodoItem = title =>{
       <TodoList 
       todos={this.state.todos} 
       handleChangeprops = {this.handleChange}
-      deleteTodoprops = {this.delTodo}/>
+      deleteTodoprops = {this.delTodo}
+      setUpdate={this.setUpdate}/>
       </div>
     </div>
         )
