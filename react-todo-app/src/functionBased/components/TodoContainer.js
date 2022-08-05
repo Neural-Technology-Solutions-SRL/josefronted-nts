@@ -3,6 +3,11 @@ import TodoList from "./TodoList";
 import Header from "./Header";
 import InputTodo from "./ImputTodo";
 import { v4 as uuidv4 } from "uuid";
+import { Route, Routes } from "react-router-dom";
+import About from "../pages/About";
+import NoMatch from "../pages/NoMatch";
+import Navbar from "./Navbar";
+
 
 const TodoContainer =()=> {
     /*state = {
@@ -80,12 +85,14 @@ const TodoContainer =()=> {
             setTodos(loadedTodos)
         }
     },[]);
+
     useEffect(()=>{
         console.log("test run")
         // getting stored items
         const temp = JSON.stringify(todos)
         localStorage.setItem("todos", temp)
     },[todos]);
+
     function getInitialTodos(){
         //getting stored items
         const temp = localStorage.getItem("todos")
@@ -94,6 +101,10 @@ const TodoContainer =()=> {
     }
 
         return (
+            <React.Fragment>
+                <Navbar/>
+            <Routes>
+            <Route exact path="/" element = {
             <div className="container">
                 <div className="inner">
                     <Header />
@@ -104,7 +115,12 @@ const TodoContainer =()=> {
                         deleteTodoprops={delTodo}
                         setUpdate={setUpdate} />
                 </div>
-            </div>
+            </div>}>
+            </Route>
+            <Route path="/about" component = {About} element ={<About/>}></Route>
+            <Route path="*" element = {<NoMatch/>}></Route>
+            </Routes>
+            </React.Fragment>
         )
     }
 
