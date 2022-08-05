@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import {FaPlusSquare} from "react-icons/fa"
+
 
 const InputTodo = props => {
   const [inputText, setInputText] = useState({ title: "", })
@@ -32,7 +34,11 @@ const InputTodo = props => {
         name="title"
         onChange={onChange}
       />
-      <button className="input-submit">Submit</button>
+      <button className="input-submit">
+        <FaPlusSquare
+      style={{ color: "green", fontSize: "20px", marginTop: "4px" }}
+      />
+      </button>
     </form>
   )
 }
