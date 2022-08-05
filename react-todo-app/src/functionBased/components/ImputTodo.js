@@ -1,9 +1,7 @@
 import React, { useState } from "react"
 
 const InputTodo = props => {
-  const [inputText, setInputText] = useState({
-    title: "",
-  })
+  const [inputText, setInputText] = useState({ title: "", })
 
   const onChange = e => {
     setInputText({
@@ -15,7 +13,7 @@ const InputTodo = props => {
   const handleSubmit = e => {
     e.preventDefault()
     if (inputText.title.trim()) {
-      props.addTodoProps(inputText.title)
+      props.addTodoprops(inputText.title)
       setInputText({
         title: "",
       })
