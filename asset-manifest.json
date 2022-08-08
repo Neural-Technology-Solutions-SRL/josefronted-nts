@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/josefronted-nts/static/css/main.394ddc05.css",
-    "main.js": "/josefronted-nts/static/js/main.b5eb9ef5.js",
-    "index.html": "/josefronted-nts/index.html",
-    "main.394ddc05.css.map": "/josefronted-nts/static/css/main.394ddc05.css.map",
-    "main.b5eb9ef5.js.map": "/josefronted-nts/static/js/main.b5eb9ef5.js.map"
+    "main.css": "/neural-technology-solutions-srl.github.io/josefronted-nts/static/css/main.394ddc05.css",
+    "main.js": "/neural-technology-solutions-srl.github.io/josefronted-nts/static/js/main.b5eb9ef5.js",
+    "index.html": "/neural-technology-solutions-srl.github.io/josefronted-nts/index.html",
+    "main.394ddc05.css.map": "/neural-technology-solutions-srl.github.io/josefronted-nts/static/css/main.394ddc05.css.map",
+    "main.b5eb9ef5.js.map": "/neural-technology-solutions-srl.github.io/josefronted-nts/static/js/main.b5eb9ef5.js.map"
   },
   "entrypoints": [
     "static/css/main.394ddc05.css",
