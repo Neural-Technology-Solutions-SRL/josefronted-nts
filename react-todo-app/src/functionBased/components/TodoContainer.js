@@ -104,7 +104,7 @@ const TodoContainer =()=> {
             <React.Fragment>
                 <Navbar/>
             <Routes>
-            <Route exact path="/" element = {
+            <Route exact="true" path="/" element = {
             <div className="container">
                 <div className="inner">
                     <Header />
@@ -117,7 +117,7 @@ const TodoContainer =()=> {
                 </div>
             </div>}>
             </Route>
-            <Route path="/about" component = {About} element ={<About/>}></Route>
+            <Route exact="true" path="/about/*" element={<About/>} />
             <Route path="*" element = {<NoMatch/>}></Route>
             </Routes>
             </React.Fragment>
