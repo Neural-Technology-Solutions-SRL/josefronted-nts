@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/josefronted-nts/static/css/main.394ddc05.css",
+    "main.js": "/josefronted-nts/static/js/main.c131cc9f.js",
+    "index.html": "/josefronted-nts/index.html",
+    "main.394ddc05.css.map": "/josefronted-nts/static/css/main.394ddc05.css.map",
+    "main.c131cc9f.js.map": "/josefronted-nts/static/js/main.c131cc9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.394ddc05.css",
+    "static/js/main.c131cc9f.js"
+  ]
+}
