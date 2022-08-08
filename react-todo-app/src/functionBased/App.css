@@ -9,19 +9,19 @@ body {
     color: #444;
     background: #fff;
     height: 100vh;
-};
+}
 .container{
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-};
+}
 .inner{
     width: 100%;
     padding: 8rem 10px 4rem ; 
-};
+}
 
 .form-container{
     width: 100%;
@@ -73,8 +73,10 @@ body {
     top:40px;
     z-index: 10;
     cursor:pointer;
-    background:transparent;
+    background:transparent;;
     border:none;
+    outline: none;
+    font-size: 40px;
 }
 
 .menuNav{
@@ -115,6 +117,7 @@ a{
     flex: 2;
     margin-right: 15px;
   }
+  
   .about__list a {
     color: #9f9f9f;
     text-transform: capitalize;
@@ -127,7 +130,7 @@ a{
   }
   
   .main__content {
-    flex: 70;
+    flex: 7;
   }
   
   .main__content h1 {
