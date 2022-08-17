@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import {FaPlusSquare} from "react-icons/fa"
 
 
-const InputTodo = props => {
+const InputTodo = props => 
+{
   const [inputText, setInputText] = useState({ title: "", })
 
   const onChange = e => {
