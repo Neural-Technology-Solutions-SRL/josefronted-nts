@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/josefronted-nts/static/css/main.394ddc05.css",
+    "main.css": "/josefronted-nts/static/css/main.6a939a31.css",
     "main.js": "/josefronted-nts/static/js/main.b5eb9ef5.js",
     "index.html": "/josefronted-nts/index.html",
-    "main.394ddc05.css.map": "/josefronted-nts/static/css/main.394ddc05.css.map",
+    "main.6a939a31.css.map": "/josefronted-nts/static/css/main.6a939a31.css.map",
     "main.b5eb9ef5.js.map": "/josefronted-nts/static/js/main.b5eb9ef5.js.map"
   },
   "entrypoints": [
-    "static/css/main.394ddc05.css",
+    "static/css/main.6a939a31.css",
     "static/js/main.b5eb9ef5.js"
   ]
 }
