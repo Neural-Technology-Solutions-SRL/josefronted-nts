@@ -7,10 +7,12 @@ const InputTodo = props =>
   const [inputText, setInputText] = useState({ title: "", })
 
   const onChange = e => {
+    console.log(e.target.name +"  "+ e.target.value)
     setInputText({
       ...inputText,
       [e.target.name]: e.target.value,
-    })
+      
+    } )
   }
 
   const handleSubmit = e => {

@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "../pages/About";
 import NoMatch from "../pages/NoMatch";
 import Navbar from "./Navbar";
+import Api from "../pages/Api";
 
 
 const TodoContainer =()=> {
@@ -118,6 +119,7 @@ const TodoContainer =()=> {
             </div>}>
             </Route>
             <Route exact="true" path="/about/*" element={<About/>} />
+            <Route exact="true" path="/Api" element={<Api/>} />
             <Route path="*" element = {<NoMatch/>}></Route>
             </Routes>
             </React.Fragment>

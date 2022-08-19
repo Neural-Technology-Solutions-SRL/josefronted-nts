@@ -15,7 +15,13 @@ const Navbar = () =>{
             id:2,
             path: "/about",
             text: "About",
-            },
+         },
+         {
+            id:3,
+            path: "/Api",
+            text: "Api",
+         },
+            
     ]
     const handleToggle = ()=>{
         SetNavbarOpen(prev => !prev)

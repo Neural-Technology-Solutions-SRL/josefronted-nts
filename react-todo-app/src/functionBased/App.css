@@ -144,3 +144,29 @@ a{
   .main__content p {
     line-height: 25px;
   }
+  .Apibody{
+    padding: 50px 100px ;
+    margin: 100px;
+    background-color:#61696d;
+    display:flexbox;
+    border-radius: 40px;
+    position:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(255, 255, 255);
+    margin-right: 30px;
+  }
+  .Apih1{
+    position:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    margin: 100px;
+    padding: 50px 100px ;
+  }
+  .apitext{
+    position:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    margin: 0 100px;
+    padding: 0px 100px ;
+  }
+ 

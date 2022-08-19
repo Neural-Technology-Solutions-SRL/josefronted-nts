@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
+
 const SinglePage = () =>{
     console.log(useParams())
 
@@ -18,9 +19,10 @@ const SinglePage = () =>{
           description:
             "This app was developed by Ibas Majid, a self-taught web developer and a technical writer. He is opened to freelance Gig. So go ahead and connect with ibas on Twitter @ibaslogic.",
         },
+        
       ]
     const aboutContent = aboutData.find(item => item.slug === slug)
-    console.log(aboutContent)
+    console.log(aboutContent);
     const{title, description} = aboutContent
     return (<div className="main__content">
         <h1>{title}</h1>
