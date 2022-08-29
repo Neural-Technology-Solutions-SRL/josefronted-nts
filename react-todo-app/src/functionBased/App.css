@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style:none
 }
 body {
     font-family: "segoe UI", Arial, sans-serif;
@@ -143,4 +144,88 @@ a{
   
   .main__content p {
     line-height: 25px;
+  }
+  .Apibody{
+    padding: 50px 100px ;
+    margin: 100px;
+    background-color:#61696d;
+    display:flex;
+    border-radius: 40px;
+    position:sticky;
+    top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(255, 255, 255);
+    margin-right: 30px;
+    justify-content: center;
+    box-shadow: 0px 13px 0 0 rgba(0, 0, 0, 0.873);
+    
+  }
+  .Apih1{
+    position:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    margin: 100px;
+    padding: 50px 100px ;
+  }
+  .apitext{
+   border: none;
+   outline: none;
+   width: 80%;
+  }
+ 
+  .flex-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+    border-radius: 50px;
+    
+  }
+  .apiInput{
+    height:5ex;
+    width: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  justify-content: space-evenly;
+  }
+  .ApiButtonList{
+    display: flex;
+    justify-content: space-around;
+  }
+  .ApiButton{
+    position:static;
+    top: 10px;
+    margin-bottom: 20px;
+
+  }
+  .itemlist{
+    margin: 50px;
+    margin-bottom: 0px;
+    border-radius:5px;
+    box-shadow: 0 20px 16px 0 rgba(22, 127, 146, 0.88);
+    width: auto;
+  }
+  .button{
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.8);
+  }
+  .itemlist h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    font-size: xx-large;
+  }
+  .itemlist h3{
+    margin-left: 20px;
+  }
+  .itemlist h4{
+    margin-left: 80px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .Spacedescription{
+    display: flex;
+    width: 10px;
+    height: 80px;
   }
