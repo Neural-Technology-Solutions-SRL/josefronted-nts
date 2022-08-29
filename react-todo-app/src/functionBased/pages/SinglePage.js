@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 
 const SinglePage = () =>{
-    console.log(useParams())
 
     const {slug} = useParams()
     const aboutData= [
@@ -22,7 +21,6 @@ const SinglePage = () =>{
         
       ]
     const aboutContent = aboutData.find(item => item.slug === slug)
-    console.log(aboutContent);
     const{title, description} = aboutContent
     return (<div className="main__content">
         <h1>{title}</h1>

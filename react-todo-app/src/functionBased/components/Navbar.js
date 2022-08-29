@@ -25,7 +25,6 @@ const Navbar = () =>{
     ]
     const handleToggle = ()=>{
         SetNavbarOpen(prev => !prev)
-        console.log("you state have changed ")
     }
     const closeMenu = () =>{
         SetNavbarOpen(false)

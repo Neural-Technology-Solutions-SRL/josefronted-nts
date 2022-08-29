@@ -1,31 +1,28 @@
-import React, { useState } from "react"
-import {FaPlusSquare} from "react-icons/fa"
+import React, { useState } from "react";
+import { FaPlusSquare } from "react-icons/fa";
 
+const InputTodo = (props) => {
+  const [inputText, setInputText] = useState({ title: "" });
 
-const InputTodo = props => 
-{
-  const [inputText, setInputText] = useState({ title: "", })
-
-  const onChange = e => {
-    console.log(e.target.name +"  "+ e.target.value)
+  const onChange = (e) => {
+    console.log(e.target.name + "  " + e.target.value);
     setInputText({
       ...inputText,
       [e.target.name]: e.target.value,
-      
-    } )
-  }
+    });
+  };
 
-  const handleSubmit = e => {
-    e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (inputText.title.trim()) {
-      props.addTodoprops(inputText.title)
+      props.addTodoprops(inputText.title);
       setInputText({
         title: "",
-      })
+      });
     } else {
-      alert("Please write item")
+      alert("Please write item");
     }
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="form-container">
@@ -39,11 +36,11 @@ const InputTodo = props =>
       />
       <button className="input-submit">
         <FaPlusSquare
-      style={{ color: "green", fontSize: "20px", marginTop: "4px" }}
-      />
+          style={{ color: "green", fontSize: "20px", marginTop: "4px" }}
+        />
       </button>
     </form>
-  )
-}
+  );
+};
 
-export default InputTodo
+export default InputTodo;
