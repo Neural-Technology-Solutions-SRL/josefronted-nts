@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { CgInsertAfter } from "react-icons/cg";
-import { MdDelete, MdEdit, MdUpdate } from "react-icons/md";
-
-/*const  getlistings = ()=>{
-    fetch("https://localhost:7084/api/CountryItems").then(response =>response.json()).then(data => console.log(data))
-  }
-  getlistings()*/
+import { MdDelete, MdEdit } from "react-icons/md";
 
 let state = {
   id: uuidv4(),
@@ -21,7 +16,7 @@ const Api = () => {
 
   const [newcountry, setnewcountry] = useState(state);
 
-  const [send, setsend] = useState(0);
+  const [send, setsend] = useState(1);
   const getlistings = async () => {
     const getdata = await fetch("https://www.todoapi.somee.com/api/Countryitems");
     const source = await getdata.json();
@@ -37,7 +32,7 @@ const Api = () => {
     setnewcountry({ ...newcountry, [e.target.name]: e.target.value });
   };
 
-  const onClick = (e) => {
+  const onClick = () => {
     setnewcountry({ ...newcountry, id: uuidv4() });
     const postgetlistings = async () => {
       const getdata = await fetch("https://www.todoapi.somee.com/api/Countryitems", {
@@ -53,7 +48,9 @@ const Api = () => {
         body: JSON.stringify(newcountry), // body data type must match "Content-Type" header
       });
       const source = await getdata.json();
-      setsend(send + 1);
+    if(!!source){
+      setsend(send+1)
+    }
     };
     postgetlistings();
     
@@ -75,15 +72,15 @@ const Api = () => {
     redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'no-referrer-when-downgrade', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
     body: JSON.JSON(newcountry) // body data type must match "Content-Type" header*/
+    
         }
       );
-      // const source = getdata.json();
-
-      // console.log(source);
-      setsend(send + 1);
+      console.log(getdata)
+      setsend(send+3);
     };
+    
     Deletegetlistings(id);
-
+    
     setnewcountry({ ...newcountry, id: uuidv4() });
   };
   const onClickPut = (item) => {
@@ -107,16 +104,18 @@ const Api = () => {
       });
       const source = await getdata.json();
       if (!!source) {
-        setsend(send + 1);
         setnewcountry({ ...newcountry, id: uuidv4() });
-        console.log(source);
+        setsend(send+4);
       }
     };
     putgetlistings();
   };
-
+  const handleSubmit =e=>{
+    e.preventDefault();
+  }
+  
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h1 className="Apibody">
         Insert your <span>: name, description and country</span>
       </h1>
@@ -187,20 +186,9 @@ const Api = () => {
         <br />
         <br />
         <div className="ApiButton">
-          <button onClick={onClick} value="2" className="Button">
+          <button onClick={()=>onClick()} className="Button">
             <CgInsertAfter
-              style={{ color: "#fff", width: "40px", height: "40px" }}
-            />
-          </button>
-          <button
-            onClick={() => {
-              setnewcountry({ ...newcountry, id: uuidv4() });
-              setsend(send + 1);
-            }}
-            className="Button"
-          >
-            <MdUpdate
-              style={{ color: "#fff", width: "40px", height: "40px" }}
+              style={{ color: "#3fffd2", width: "80px", height: "90px" }}
             />
           </button>
         </div>
