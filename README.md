@@ -1,3 +1,4 @@
 # josefronted-nts
 
-https://neural-technology-solutions-srl.github.io/josefronted-nts/#/Api
+https://neural-technology-solutions-srl.github.io/josefronted-nts
+
